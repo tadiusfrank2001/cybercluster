@@ -20,7 +20,7 @@ This project was built to **practice, showcase, and refine** core cybersecurity 
 
 | Component          | Purpose                                      |
 |-------------------|----------------------------------------------|
-| `pfSense`         | Firewall, Router, and Snort IDS host         |
+| `pfSense`         | Firewall, Router, DHCP server and Snort IDS host    |
 | `Snort`           | Intrusion Detection System (on pfSense)      |
 | `Kali Linux`      | Attacker VM for penetration testing          |
 | `Metasploitable2` | Vulnerable target machine                    |
