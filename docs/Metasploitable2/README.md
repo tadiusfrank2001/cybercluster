@@ -28,7 +28,7 @@ In this cyber lab, Metasploitable2 acts as the **victim machine** on an isolated
 |-----------|----------------------------|
 | Name      | Metasploitable-2           |
 | OS Type   | Linux (Ubuntu 8.04)        |
-| RAM       | 512 MB                     |
+| RAM       | 4 MB                       |
 | CPU       | 1 core                     |
 | Disk      | Attach converted `.qcow2`  |
 
