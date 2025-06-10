@@ -72,7 +72,7 @@ ping 192.168.101.1
 Confirm connectivity to Metasploitable2 (via routing):
 
 ```bash
-ping 192.168.100.99
+ping 192.168.100.2
 ```
 ---
 
