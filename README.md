@@ -55,26 +55,26 @@ To simulate an internal reconnaissance and attack scenario where the Kali Linux 
 
 This section outlines the core building blocks of the **CyberCluster** lab environment. Each component plays a critical role in simulating a secure and attack-ready network. Click into each module below to explore detailed configuration steps, tools used, and how they contribute to the overall lab architecture.
 
-### 🔐 [pfSense Firewall](./pfSense/README.md)
+### 🔐 [pfSense Firewall](./docs/pfSense/README.md)
 - Acts as the secure gateway between internal and external networks
 - Configured with static LAN IP and DHCP for connected VMs
 - WAN uses NAT/shared adapter for controlled internet access
 - Firewall rules restrict and monitor traffic between components
 - Integrated Snort IDS for packet-level inspection and alerting
 
-### 🎯 [Metasploitable2 (Target VM)](./Metasploitable2/README.md)
+### 🎯 [Metasploitable2 (Target VM)](./docs/Metasploitable2/README.md)
 - Intentionally vulnerable Linux host for exploitation practice
 - Emulates real-world misconfigurations and insecure services
 - Part of internal network, assigned static IP via pfSense DHCP
 - Ideal for simulating reconnaissance and attack vectors
 
-### 💀 [Kali Linux (Attacker VM)](./KaliLinux/README.md)
+### 💀 [Kali Linux (Attacker VM)](./docs/KaliLinux/README.md)
 - Full-featured offensive security OS for penetration testing
 - Connected to the same internal network as the target and firewall
 - Tools include Nmap, Metasploit, Burp Suite, etc.
 - Used to simulate scanning, exploitation, and lateral movement
 
-### 🛡️ [Snort IDS](./Snort/README.md)
+### 🛡️ [Snort IDS](./docs/Snort/README.md)
 - Deployed on pfSense to inspect internal LAN traffic
 - Signature-based detection with custom rule tuning
 - Identifies port scans, brute force, and common exploits
