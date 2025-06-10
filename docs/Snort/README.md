@@ -38,10 +38,33 @@ Snort monitors and optionally blocks suspicious activity between attacker and ta
 
 ---
 
-### 3️⃣ Update Snort Rules
+### 3. Update Snort Rules
 
 1. Navigate to the **Updates** tab.
 2. Click **Update Rules**
 3. Wait for the ruleset to download and install.
+
+---
+### 4. Add Snort to LAN Interfaces
+
+You’ll configure Snort on **both LAN1 and LAN2** to capture traffic from **Metasploitable2** and **Kali Linux**.
+
+#### LAN1 (192.168.100.0/24)
+
+1. Go to: `Services → Snort → Interfaces`
+2. Click `+ Add`
+3. Select interface (e.g., `em1`)
+4. Enable the following:
+   - `✔️ Enable Snort on this interface`
+   - `✔️ Block Offenders` *(optional IDS/IPS mode)*
+5. Choose desired rule categories:
+   - `attack-responses`, `policy`, `scan`, etc.
+6. Click **Save**
+
+#### LAN2 (192.168.101.0/24)
+
+Repeat the steps above but select the **second LAN interface** (e.g., `em2`) for Kali Linux.
+
+---
 
 
