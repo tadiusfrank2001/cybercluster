@@ -56,7 +56,7 @@ You’ll configure Snort on **both LAN1 and LAN2** to capture traffic from **Met
 3. Select interface (e.g., `em1`)
 4. Enable the following:
    - `✔️ Enable Snort on this interface`
-   - `✔️ Block Offenders` *(optional IDS/IPS mode)*
+   - `✔️ Block Offenders` *(optional IDS/IPS mode, for the this set up we will disable this it will block our attacker scans lol)*
 5. Choose desired rule categories:
    - `attack-responses`, `policy`, `scan`, etc.
 6. Click **Save**
@@ -67,4 +67,22 @@ Repeat the steps above but select the **second LAN interface** (e.g., `em2`) for
 
 ---
 
+### 5. Start Snort
+
+1. Return to the **Interfaces** tab
+2. Click the **Start (▶)** button next to each interface (LAN1 and LAN2)
+3. ✅ Confirm Snort shows as **Running** on both
+
+---
+
+### 6. View Alerts
+
+1. Navigate to: `Services → Snort → Alerts`
+2. Observe logs as attacks are launched from Kali toward Metasploitable2
+3. Example alerts may include:
+   - Port scanning (Nmap)
+   - Shellcode execution
+   - Exploit attempts
+
+---
 
