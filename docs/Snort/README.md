@@ -38,3 +38,10 @@ Snort monitors and optionally blocks suspicious activity between attacker and ta
 
 ---
 
+### 3️⃣ Update Snort Rules
+
+1. Navigate to the **Updates** tab.
+2. Click **Update Rules**
+3. Wait for the ruleset to download and install.
+
+
