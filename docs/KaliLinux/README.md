@@ -45,4 +45,47 @@ In this cyber lab, Kali Linux acts as the **attacker system**, used to simulate 
 
 ---
 
-## 
+## 🌐 Network Setup
+
+| Setting         | Value                        |
+|-----------------|------------------------------|
+| Adapter Type    | Emulated VLAN                |
+| Connected to    | pfSense LAN2 (192.168.101.0/24) |
+| IP Address      | Assigned by pfSense via DHCP |
+
+To verify network config:
+
+```bash
+ip a
+```
+the IP should be in the IP range set in pfsense so from **192.168.101.2 to 192.168.101.100**.
+
+---
+
+## 🪢 Confirm Network Connectivity
+
+Confirm connectivity to the pfSense gateway:
+
+```bash
+ping 192.168.101.1
+```
+Confirm connectivity to Metasploitable2 (via routing):
+
+```bash
+ping 192.168.100.99
+```
+---
+
+## 🛠️ Post-Install Checklist
+
+ 1. Perform system updates:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+2. Install any additional tools (optional):
+
+```bash
+sudo apt install net-tools nmap wireshark burpsuite -y
+```
+
