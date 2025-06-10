@@ -14,3 +14,16 @@ In this cyber lab, Kali Linux acts as the **attacker system**, used to simulate 
 
 ---
 
+## ⚙️ Virtual Machine Configuration
+
+| Setting        | Value                    |
+|----------------|--------------------------|
+| **RAM**        | 4 GB                     |
+| **CPU**        | 2 cores                  |
+| **Disk**       | 40 GB                    |
+| **Network**    | Emulated VLAN (Internal) |
+
+> 🧠 Kali resides on its own subnet managed by pfsense which can route traffic between Kali and the metaploitable VM.
+
+---
+
