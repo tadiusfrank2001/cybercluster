@@ -1,6 +1,6 @@
 # 🧠 CyberCluster: A Virtualized Cybersecurity Lab for Real-World Attack & Defense Scenarios
 
-**CyberCluster** is a self-contained, fully virtual cybersecurity lab designed to emulate enterprise-grade attack and defense scenarios using open-source tools and virtualization. Built entirely on macOS using [UTM](https://mac.getutm.app/), this lab showcases key security concepts — from intrusion detection to network segmentation — in a safe, cost-effective, and realistic environment.
+**CyberCluster** is a self-contained, fully virtual cybersecurity lab designed to emulate enterprise-grade attack and defense scenarios using open-source tools and virtualization. Built entirely on macOS using [UTM](https://mac.getutm.app/), this lab showcases key security concepts from intrusion detection to network segmentation in a safe, cost-effective, and realistic environment.
 
 ---
 ## 📌 Project Objectives
