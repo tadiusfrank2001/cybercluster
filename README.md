@@ -48,3 +48,34 @@ Each machine is configured in a **logically segmented network**, with traffic ro
 ![Network Topology](https://github.com/tadiusfrank2001/cybercluster/blob/main/cybercluster_topology.png)
 
 To simulate an internal reconnaissance and attack scenario where the Kali Linux attacker machine scans, identifies, and attempts to exploit the Metasploitable2 target, with pfSense (with Snort) logging and potentially blocking malicious activity. All traffic flows through the pfSense firewall, which also acts as the network’s gatekeeper to the internet (WAN).
+
+---
+
+## 🧱 Core Components Configs
+
+This section outlines the core building blocks of the **CyberCluster** lab environment. Each component plays a critical role in simulating a secure and attack-ready network. Click into each module below to explore detailed configuration steps, tools used, and how they contribute to the overall lab architecture.
+
+### 🔐 [pfSense Firewall](./pfSense/README.md)
+- Acts as the secure gateway between internal and external networks
+- Configured with static LAN IP and DHCP for connected VMs
+- WAN uses NAT/shared adapter for controlled internet access
+- Firewall rules restrict and monitor traffic between components
+- Integrated Snort IDS for packet-level inspection and alerting
+
+### 🎯 [Metasploitable2 (Target VM)](./Metasploitable2/README.md)
+- Intentionally vulnerable Linux host for exploitation practice
+- Emulates real-world misconfigurations and insecure services
+- Part of internal network, assigned static IP via pfSense DHCP
+- Ideal for simulating reconnaissance and attack vectors
+
+### 💀 [Kali Linux (Attacker VM)](./KaliLinux/README.md)
+- Full-featured offensive security OS for penetration testing
+- Connected to the same internal network as the target and firewall
+- Tools include Nmap, Metasploit, Burp Suite, etc.
+- Used to simulate scanning, exploitation, and lateral movement
+
+### 🛡️ [Snort IDS](./Snort/README.md)
+- Deployed on pfSense to inspect internal LAN traffic
+- Signature-based detection with custom rule tuning
+- Identifies port scans, brute force, and common exploits
+- Alerts generated in real-time with optional blocking
