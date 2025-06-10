@@ -25,7 +25,7 @@ Snort monitors and optionally blocks suspicious activity between attacker and ta
 
 ---
 
-### 2️⃣ Configure Global Settings
+### 2. Configure Global Settings
 
 1. Go to:  
    `Services → Snort → Global Settings`
@@ -85,4 +85,5 @@ Repeat the steps above but select the **second LAN interface** (e.g., `em2`) for
    - Exploit attempts
 
 ---
+
 
