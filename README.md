@@ -46,3 +46,5 @@ Each machine is configured in a **logically segmented network**, with traffic ro
 ## 🌐 Network Design
 
 ![Network Topology](https://github.com/tadiusfrank2001/cybercluster/blob/main/cybercluster_topology.png)
+
+To simulate an internal reconnaissance and attack scenario where the Kali Linux attacker machine scans, identifies, and attempts to exploit the Metasploitable2 target, with pfSense (with Snort) logging and potentially blocking malicious activity. All traffic flows through the pfSense firewall, which also acts as the network’s gatekeeper to the internet (WAN).
