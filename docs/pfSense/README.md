@@ -59,15 +59,41 @@ In this cyber lab, pfSense acts as the **central gateway and firewall**, connect
 
 ### LAN1 Interface (`em1`)
 - **Static IP**: `192.168.100.1/24`
-- **DHCP Range**: `192.168.100.10` – `192.168.100.100`
+- **DHCP Range**: `192.168.100.2` – `192.168.100.100`
 
 ### LAN2 Interface (`em2`)
 - **Static IP**: `192.168.101.1/24`
-- **DHCP Range**: (Optional, TBD based on connected devices)
+- **DHCP Range**: `192.168.101.2` – `192.168.100.100`
 
 ### WAN Interface (`em0`)
 - **DHCP from Host Network**
 
 ---
+
+## 🚫 IPv6 Settings
+
+- IPv6 configuration **disabled** on LAN interfaces
+- No DHCPv6 or RA responses accepted
+
+---
+
+## 🔥 Firewall Rules
+
+- **Default Rules** applied at first boot
+- Custom rules added for:
+  - LAN-to-WAN access control
+  - Intra-LAN segmentation (optional)
+  - Snort IDS packet inspection
+
+---
+
+## 🛡️ Snort Integration
+
+- Snort is installed and configured on pfSense
+- Used for real-time packet inspection and alerting
+- Ruleset tuned for internal lab monitoring
+
+---
+
 
 
