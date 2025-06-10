@@ -42,4 +42,7 @@ Each machine is configured in a **logically segmented network**, with traffic ro
 | **Documentation & Design** | Created clear, modular guides and structured configs   |
 
 
+---
+## 🌐 Network Design
 
+![Network Topology](https://github.com/tadiusfrank2001/cybercluster/blob/main/cybercluster_topology.png)
