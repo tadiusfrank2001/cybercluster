@@ -9,7 +9,7 @@ This section outlines a complete offensive workflow executed from the Kali Linux
 
 ### 1. **Netdiscover**: Identified live hosts within the 192.168.101.0/24 and 192.168.100.0/24 ranges.
 ```bash
-netdiscover -r 192.168.100.0/24  #target subnet IP
+netdiscover -r 192.168.100.0/24  # target subnet IP
 ```
 Explanation:
 
@@ -17,7 +17,7 @@ Explanation:
   
 ### 2. **Nmap (-sS, -A)**: Performed stealth SYN scans and full version detection to identify open ports and services on Metasploitable2.
 ```bash
-nmap -sS -A 192.168.100.2
+nmap -sS -A 192.168.100.2  # Metasploitable VM IP 
 ```
 Explanation:
 
