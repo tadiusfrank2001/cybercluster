@@ -12,15 +12,17 @@ This section outlines a complete offensive workflow executed from the Kali Linux
 netdiscover -r 192.168.100.0/24
 ```
 Explanation:
-  ● -r:  Specifies the subnet range to scan.
+
+   -r: Specifies the subnet range to scan.
   
 - **Nmap (-sS, -A)**: Performed stealth SYN scans and full version detection to identify open ports and services on Metasploitable2.
 ```bash
 nmap -sS -A 192.168.100.2
 ```
 Explanation:
-  ● -sS: Performs a TCP SYN scan (stealth scan).
-  ● -A: Enables OS detection, version detection, script scanning, and traceroute.
+
+   -sS: Performs a TCP SYN scan (stealth scan).
+   -A: Enables OS detection, version detection, script scanning, and traceroute.
 
 - **WhatWeb**: Detected web technologies running on Metasploitable’s HTTP service (e.g., Apache, PHP).
 - **Nikto**: Scanned for known web vulnerabilities, including directory traversal, outdated components, and insecure HTTP headers.
