@@ -106,9 +106,43 @@ exploit
 sessions
 sysinfo
 ```
+---
+## 🛰️ Command & Control (C2)
+
+- Maintain access using Meterpreter modules:
+```bash
+run persistence # Creates the reverse shell that able to reconnect back to attacker machine
+screenshot
+hashdump
+```
+
+- Explore the target:
+```bash
+ps # observe active processes on target machine
+ls -la /home # observe all hidden files and permissions in /home directory on target machine 
+```
 
 ---
+## Rules Triggered:
 
+| Attack Type           | Snort Rule Triggered              | Description                             |
+|-----------------------|-----------------------------------|-----------------------------------------|
+| Nmap SYN Scan         | `ET SCAN Nmap Scripting Engine`   | Detects common scan behavior            |
+| FTP Exploit (MS08-067)| `EXPLOIT SMB ms08-067`            | Legacy Windows SMB exploit              |
+| Reverse Shell Traffic | `SHELLCODE x86`                   | Detects shellcode communication         |
+
+### Viewing Alerts:
+- pfSense WebGUI → **Services > Snort > Alerts**
+- Real-time visibility into scans, exploits, and reverse shell activity
+
+---
+## ✅ Summary
+
+This simulation demonstrates:
+
+- How attackers use common tools to discover, exploit, and control vulnerable machines.
+- How **Snort IDS** detects these malicious behaviors in real time.
+- How a segmented, layered lab environment (CyberCluster) supports defensive and offensive experimentation.
 
 
 
