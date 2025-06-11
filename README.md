@@ -79,3 +79,12 @@ This section outlines the core building blocks of the **CyberCluster** lab envir
 - Signature-based detection with custom rule tuning
 - Identifies port scans, brute force, and common exploits
 - Alerts generated in real-time with optional blocking
+
+### 🏹 [Attack Simulation](./docs/AttackSim/README.md)
+- Simulates a full Cyber Kill Chain: **Reconnaissance → Weaponization → Delivery → Exploitation → Command & Control**
+- Begins with passive and active OSINT using tools like `netdiscover`, `nmap`, `whatweb`, and `nikto` to map and profile the target
+- Identifies vulnerable services such as outdated FTP, SSH, and web applications on Metasploitable2
+- Generates and configures a malicious payload using `msfvenom` (e.g., reverse TCP shell)
+- Leverages `Metasploit Framework` to deliver and execute payloads via known exploits (e.g., `vsftpd`, `ms08_067_netapi`)
+- Establishes a reverse shell session (Meterpreter) with full access to the target system
+- Snort (on pfSense) monitors and logs attack behaviors including scans, exploit attempts, and shellcode activity in real-time
