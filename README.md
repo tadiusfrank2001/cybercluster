@@ -1,6 +1,6 @@
-# CyberCluster: A Virtualized Cybersecurity Lab for Real-World Attack & Defense Scenarios
+# CyberCluster: A Virtualized Cybersecurity Node Cluster for Real-World Attack & Defense Scenarios
 
-**CyberCluster** is a self-contained, fully virtual cybersecurity lab designed to emulate enterprise-grade attack and defense scenarios using open-source tools and virtualization. Built entirely on macOS using [UTM](https://mac.getutm.app/), this lab showcases key security concepts from intrusion detection to network segmentation in a safe, cost-effective, and realistic environment.
+**CyberCluster** is a self-contained, fully virtual cybersecurity project designed to emulate enterprise-grade attack and defense scenarios using open-source tools and virtualization. Built entirely on macOS using [UTM](https://mac.getutm.app/), this lab showcases key security concepts from intrusion detection to network segmentation in a safe, cost-effective, and realistic environment.
 
 ---
 ## 📌 Project Objectives
@@ -53,7 +53,7 @@ To simulate an internal reconnaissance and attack scenario where the Kali Linux 
 
 ## 🧱 Core Components Configs
 
-This section outlines the core building blocks of the **CyberCluster** lab environment. Each component plays a critical role in simulating a secure and attack-ready network. Click into each module below to explore detailed configuration steps, tools used, and how they contribute to the overall lab architecture.
+This section outlines the core building blocks of the **CyberCluster** environment. Each component plays a critical role in simulating a secure and attack-ready network. Click into each module below to explore detailed configuration steps, tools used, and how they contribute to the overall project architecture.
 
 ### 🔐 [pfSense Firewall](./docs/pfSense/README.md)
 - Acts as the secure gateway between internal and external networks
